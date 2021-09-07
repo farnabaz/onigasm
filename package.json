@@ -1,9 +1,12 @@
 {
-  "name": "onigasm",
+  "name": "@farnabaz/onigasm",
   "version": "2.2.5",
   "description": "WebAssembly port of Oniguruma regex library",
   "main": "lib/index.js",
   "typings": "lib/typings/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build::onig": "./scripts/build.sh",
     "watch::onig": "onchange 'src/**/*.cc' -w -p 1000 -- npm run build::onig",
